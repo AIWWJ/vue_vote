@@ -1,0 +1,221 @@
+.header {
+    top: 0;
+    left: 0;
+}
+/*投票结果样式  */
+
+.vote_result,
+.rank {
+    padding: 1rem;
+}
+
+.vote_msg {
+    padding: 1rem 0;
+    margin-top: 1rem;
+    background-size: 1.6rem !important;
+}
+
+.vote_text {
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    padding-left: .9rem;    
+    border-left: 10px solid #ffc501;
+    text-align: left;
+}
+
+.vote_target {
+    padding: 1rem 1rem .2rem 1rem;
+    overflow: hidden;
+}
+
+.vote_target_msg {
+    vertical-align: bottom;
+    /*下端对齐得重新找方法  */
+    margin: 0 0 0 1rem;
+}
+
+.vote_target_pic img {
+    border-top: .6rem solid #fff;
+    border-bottom: .8rem solid #fff;
+}
+
+.vote_target .vote_target_pic,
+.vote_target .vote_target_msg {
+    float: left;
+}
+
+.vote_target .vote_target_pic img {
+    width: 10rem;
+    height: 8rem;
+}
+
+.vote_target_msg .author:before {
+    content: "作者 : ";
+}
+
+.vote_result span {
+    display: inline-block;
+}
+
+.vote_ba{
+     float: left;
+}
+.vote_msg,
+.vote_data {
+    display: inline-block;
+    /* float: left; */
+}
+
+.vote_author,
+.vote_data {
+    font-size: 2.5rem;
+    color: #999;
+    text-align: left;
+}
+
+.vote_author {
+    margin: 1rem 0 1rem;
+}
+
+.vote_author:before {
+    content: "作者：";
+}
+
+.vote_data {
+    margin: 1rem 0 0 .5rem;
+}
+
+.gray_bar,
+.yel_bar {
+    height: 1.2rem;
+    border-radius: 10px;
+}
+
+.gray_bar {
+    margin-left: 2.5rem;
+    width: 12rem;
+    background-color: #eee;
+}
+
+.yel_bar {
+    top: 0;
+    left: 0;
+    display: inline-block;
+    width: 0;
+    background-color: #ffc501;
+    /* transition: width 2s linear; */
+}
+
+
+/*投票排行榜样式 
+
+.rank {
+    margin-top: 1.5rem;
+}
+
+.vote_pic_msg {
+    bottom: 3px;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    z-index: 2;
+}
+
+
+/*相片边框  */
+
+.vote_pic_msg .msg_other {
+    overflow: hidden;
+    margin: .6rem .8rem;
+}
+
+.author {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #ccc;    
+}
+
+.vote_pic_msg .author {
+    margin-top: .3rem;
+    text-align: left;
+    padding-left: .5rem;
+    /*作者姓名超过三个字则省略号显示  */
+    width: 8.5rem;
+}
+
+.vote_pic_msg .like {
+    margin-top: .3rem;
+}
+
+.like_num {
+    background-image: url(../assets/yellowHeart.png);
+}
+
+
+/*图片左上方排名图片  */
+
+.rank_pic {
+    top: 0;
+    left: 1rem;
+    width: 5rem;
+    height: 6rem;
+    background: url(../assets/top_d.png) no-repeat;
+    background-size: 100%;    
+}
+
+.pic_wrap:nth-child(1) .rank_pic {
+    background-image: url(../assets/top_a.png);
+}
+
+.pic_wrap:nth-child(2) .rank_pic {
+    background-image: url(../assets/top_b.png);
+}
+
+.pic_wrap:nth-child(3) .rank_pic {
+    background-image: url(../assets/top_c.png);
+}
+
+.rank_num {
+    color: #bc712d;
+    font-size: 3rem;
+    width: 5rem;
+    font-weight: 700;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+}
+
+.rank_num_two {
+    font-size: 2rem;
+    margin-top: 1.2rem;
+    margin-left: 1.4rem;
+}
+
+.rank_num_three {
+    font-size: 1.6rem;
+    margin-top: 1.3rem;
+    margin-left: 1.05rem;
+}
+
+.pic_wrap:nth-child(1) .rank_num,
+.pic_wrap:nth-child(2) .rank_num,
+.pic_wrap:nth-child(3) .rank_num {   
+    background-size: 100%;
+    height: 6rem;
+    line-height: 6rem;
+}
+
+.v-enter-active,.v-leave-active{
+    transition: all 3s ease-in;
+}
+.fade-enter-active,.fade-leave-active{
+    transition: all 3s ease-in;
+}
+.fade-enter{
+    width: 50px;
+}
+.fade-leave-to{
+    width: 100px;
+}

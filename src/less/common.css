@@ -1,0 +1,253 @@
+/*基础样式  */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    background-color: #333;
+    font-size: 62.5% !important;
+    font-family: 'Microsoft YaHei', 'Hiragino Sans GB', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*头部banner样式  */
+
+.banner {
+    width: 100%;    
+    height: 15rem;
+}
+
+/*固定定位  */
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+}
+
+/*background-size:100%  */
+
+.bs100 {
+    background-size: 100% !important;
+}
+
+
+/*height:100%  */
+
+.h100 {
+    height: 100%;
+}
+
+
+/*width:100%  */
+
+.w100 {
+    width: 100%;
+}
+
+
+/*position: absolute;  */
+
+.ab {
+    position: absolute;
+}
+
+
+/*position: relative;  */
+
+.rel {
+    position: relative;
+}
+
+
+/*占据整个屏幕  */
+
+.ab_0 {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+
+/*垂直水平居中 */
+
+.ab_50 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/*隐藏  */
+
+.hide {
+    display: none;
+}
+
+
+/*box-sizing: border-box;  */
+
+.bs_bb {
+    box-sizing: border-box;
+}
+
+
+/*float: left;  */
+
+.fl {
+    float: left;
+}
+
+
+/* float: right; */
+
+.fr {
+    float: right;
+}
+
+
+/*超过长度省略号显示 ,暂时没用到 */
+
+.elp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/*相片盒子  */
+
+
+.pic_box {
+    margin-top: 1rem;
+}
+
+.pic_wrap {
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.pic_wrap:nth-child(odd) {
+    padding-right: 1.5rem;
+}
+
+/* .pic_wrap:nth-child(even) {
+    padding-left: .7rem;
+} */
+
+.pic_wrap .pic img {
+    height: 20rem;
+}
+
+.author,
+.like {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.like_num {
+    display: inline-block;
+    padding-left: 1.7rem;
+    background: url(../assets/whiteHeart.png) no-repeat left center;
+    font-size: 2rem;
+    background-size: 1.3rem !important;
+}
+
+
+/*相片边框  */
+
+.bor_tb {
+    border-top: 1.6rem solid #232222;
+    border-bottom: 1.6rem solid #232222;
+}
+
+.pic_wrap:nth-child(3n+1) .bor_tb {
+    border-top-width: 2.2rem;
+}
+
+.pic_wrap:nth-child(3n+2) .bor_tb {
+    border-bottom-width: 2.2rem;
+}
+
+.pic_wrap:nth-child(3n+3) .bor_tb {
+    border-top-width: 2.2rem;
+    border-bottom-width: 2.2rem;
+}
+
+div[data-vote="true"] {
+    background: url(../assets/yellowHeart.png) no-repeat left center;
+}
+
+
+/*数据加载完成之前的动画  */
+
+.loading {
+    /* background: #fff; */
+    background: rgba(0, 0, 0, .5);
+    z-index: 8;
+}
+
+.loading .ab {
+    background: rgba(0, 0, 0, .7);
+    display: inline-block;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.load_box {
+    text-align: center;
+    margin: 6.5rem;
+}
+
+.load_box p {
+    color: #6ff1e0;
+    font-size: 4rem;
+}
+
+
+/* 加载中 */
+
+@-webkit-keyframes ajax-loader-rotate {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes ajax-loader-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes ajax-loader-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.ajax-loader {
+    margin: 6rem auto;
+    opacity: .8;
+    display: block;
+    border-radius: 50%;
+    font-size: 9rem;
+    width: .25em;
+    height: .25em;
+    box-shadow: 0 -.4em 0 0 #6ff1e0, -.28em -.28em 0 0 #69b7ad, -.4em 0 0 0 #5ba299, -.28em .28em 0 0 #477b75;
+    -webkit-animation: .85s ajax-loader-rotate steps(8) infinite;
+    -moz-animation: .85s ajax-loader-rotate steps(8) infinite;
+    animation: .85s ajax-loader-rotate steps(8) infinite;
+}

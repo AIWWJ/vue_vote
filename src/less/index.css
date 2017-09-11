@@ -1,0 +1,411 @@
+/*顶部banner样式  */
+
+#header {
+    background-color: #fff;
+}
+
+.intro {
+    top: 0;
+    right: 0;
+    width: 9rem;
+    height: 4.5rem;
+}
+
+
+/*搜索框样式  */
+
+#form {
+    box-sizing: border-box;
+    width: 100%;
+    height: 9rem;
+    padding: 1.5rem 2rem;
+    /*除去行内元素inline-block带来的小缝隙  */
+    font-size: 0;
+}
+
+.search_input {
+    display: inline-block;
+    width: 82%;
+    border: 1px solid #ccc;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    zoom: 1;
+    vertical-align: top;
+}
+
+.search_icon,
+.close_icon {
+    width: 3rem;
+    height: 3rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.close_icon {    
+    z-index: 2;
+    right: .2rem;
+    background: #fff url(../assets/close.png) no-repeat;
+}
+
+.search_input .search_icon {
+    left: .8rem;
+    background: url(../assets/search.png) no-repeat;
+}
+
+.search_input input {
+    box-sizing: border-box;
+    width: 90%;
+    border: 0;
+    height: 100%;
+    font-size: 3.5rem;
+    padding-left: 4.5rem;
+    outline: none;
+}
+
+.search_btn {
+    width: 17%;
+    height: 100%;
+    border: 0;
+    display: inline-block;
+}
+
+.search_btn input {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: 1px solid transparent;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: #f54e45;
+    color: #fff;
+    font-size: 2.2rem;
+    line-height: 5rem;
+}
+
+
+/*投票按钮样式  */
+
+.vote_btn {
+    position: fixed;
+    bottom: 0;
+    height: 7rem;
+    background: url(../assets/vote-btn.png) no-repeat;
+    z-index: 4;
+}
+
+
+/*达到投票数之后的弹窗样式  */
+
+.t25 {
+    top: 25% !important;
+}
+
+.mask {
+    background: rgba(0, 0, 0, .9);
+    z-index: 5;
+}
+
+.mask .mask_box {
+    width: 40rem;
+}
+
+.mask_box .mask_con {
+    background: url(../assets/tips-content.png) no-repeat;
+    height: 20rem;
+    /* line-height: 20rem; */
+}
+
+.mask_con p {
+    font-size: 3rem;
+    padding: 6rem 2rem;
+    text-align: center;
+    /* position: absolute; */
+}
+
+.mask_box .mask_btn {
+    height: 6rem;
+    background: url(../assets/tips-btn.png) no-repeat;
+    background-size: 100%;
+}
+
+
+/*投票页面  */
+
+.vote_page {
+    z-index: 4;
+    background-color: rgba(0, 0, 0, .9);
+}
+
+.vote_title {
+    height: 6rem;
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.vote_title .back,
+.vote_title .chose {
+    margin-left: 3.5rem;
+}
+
+.vote_title .back {
+    color: #fff;
+    line-height: 6rem;
+    float: left;
+}
+
+.vote_title .chose {
+    right: 3.5rem;
+    padding: .5rem;
+    line-height: 3rem;
+    border: 4px solid #fff;
+    border-radius: 8px;
+    background-color: transparent;
+    box-sizing: border-box;
+}
+
+.vote_pic {
+    margin-top: 8rem;
+}
+
+.vote_pic img {
+    left: 50%;
+    /* top: 15%; */
+    width: 100%;
+    height: 20rem;
+    transform: translateX(-50%);
+}
+
+.vote_page .vote_msg {
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, .6);
+    padding: 2rem 1.5rem 2.5rem 1.5rem;
+    box-sizing: border-box;
+    color: #fff;
+    z-index: 2;
+}
+.vote_msg .msg_title{
+    text-align: left;
+}
+
+/* .vote_page .author span {
+    content: "作者 : ";
+} */
+
+/* .vote_msg .author_like {
+    margin-top: 1rem;
+}
+ */
+.vote_msg span {
+    font-size: 3rem;
+}
+
+.list+span {
+    /* margin-right: .5rem; */
+}
+
+.mag_other .list,
+.mag_other  .list+span {
+    font-size: 2rem;
+    float: left;
+}
+
+
+/*下面样式可抽出来  */
+
+.author_like .author span {
+    font-size: 2rem;
+}
+
+/* .author_like .like {
+    margin-right: 3rem
+} */
+
+
+/*搜索内容为空  */
+
+.search_null {
+    font-size: 2rem;
+    color: #fff;
+    z-index: 55;
+}
+
+.search_null p {
+    margin-top: .5rem;
+}
+
+
+/*相片部分样式  */
+
+#all_pic {
+    padding: 1.5rem 1rem;
+    overflow: hidden;
+}
+
+#first_one {
+    margin-bottom: 1.5rem;
+}
+
+.icons .hot_pic {
+    top: 0;
+    left: 2rem;
+}
+
+.icons .hot_pic img {
+    width: 7.5rem;
+    height: 5rem;
+}
+
+.icons .hot_pic span {
+    display: inline-block;
+    width: 7rem;
+    height: 5rem;
+    line-height: 3.5rem;
+    font-size: 3rem;
+    color: #fff;    
+    font-weight: 900;    
+}
+
+.tick_pic {
+    top: 0;
+    right: 0;
+    height: 3.8rem;
+    width: 3.8rem;
+    background: url(../assets/transparentTick.png) no-repeat;
+}
+
+#first_one .tick_pic {
+    height: 7rem;
+    width: 7rem;
+}
+
+#first_one .pic img {
+    height: 30rem;
+}
+
+.pic_msg {
+    bottom: 3px;
+    background: rgba(0, 0, 0, .6);
+    padding: 1.8rem 1.3rem 1.3rem 1.3rem;
+    color: #fff;
+    z-index: 2;
+    position: absolute;
+}
+
+.pic_msg .msg_title {
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.pic_msg .first span {
+    font-size: 2rem;
+}
+
+/* .first .author {
+    margin-top: 1.5rem;
+    color: #ccc;
+} */
+.pic_msg .author{
+    text-align: left;
+    /* width: 12rem;  */
+}
+
+
+/*作者姓名超过三个字则省略号显示  */
+
+.msg_other .author span:nth-child(3) {
+    display: inline-block;
+    width: 5.5rem;
+    line-height: 1;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.like {
+    margin-top: 1.5rem;
+}
+
+
+/*剩下队伍相片展示样式  */
+
+.pic_wrap .pic_msg {
+    padding: 1rem;
+}
+
+.msg_other {
+    overflow: hidden;
+    margin-bottom: .5rem;
+}
+
+.pic_wrap .icons .tick_pic {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+/*活动详情  */
+
+.intro_pic {
+    background: rgba(0, 0, 0, .7);
+    z-index: 5;
+}
+
+.info_ensure {
+    top: 14%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+}
+
+.intro_pic img:nth-child(1) {
+    height: 30rem;
+}
+
+.intro_pic img:nth-child(2) {
+    display: inline-block;
+    margin-top: -5px;
+    height: 5rem;
+}
+
+
+/*点击事件样式  */
+
+.bd {
+    outline: .5rem solid #f64e45;
+}
+
+.yel_tick {
+    background-image: url(../assets/yellowTick.png);
+    z-index: 3;
+}
+
+
+/* yel_heart可去除 */
+
+.yel_heart {
+    background-image: url(../assets/yellowHeart.png) !important;
+}
+
+
+/* .chose_bgc {
+    background-color: #f64e45;
+} */
+
+/* span[data-chose="false"] {
+    background-color: transparent;
+} */
+
+.chosed {
+    background-color: #f64e45 !important;
+    border-color: #f64e45 !important;
+}
+
+
+/*判断是否投票  */
+
+div.like_num {
+    background: url(../assets/whiteHeart.png) no-repeat left center;
+}
